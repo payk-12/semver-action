@@ -1,4 +1,4 @@
-name: Set SemVer Variables
+name: 'Set SemVer Variables'
 description: 'Runs a shell script and sets multiple outputs'
 inputs:
   version:
