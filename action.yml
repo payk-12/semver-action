@@ -1,0 +1,19 @@
+name: Set SemVer Variables
+description: 'Runs a shell script and sets multiple outputs'
+inputs:
+  version:
+    description: 'Input 1 description'
+    required: false
+  increment_by:
+    description: 'Increment by value: major, minor, patch, none'
+		default: 'patch'
+    required: false
+outputs:
+  current_version:
+    description: 'The current SemVer value'
+  new_version:
+    description: 'The updated SemVer value'
+runs:
+  using: 'node12'
+  main: 'index.js'
+        
