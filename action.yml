@@ -1,18 +1,20 @@
-name: 'Set SemVer Variables'
-description: 'Runs a shell script and sets multiple outputs'
+# https://help.github.com/en/articles/metadata-syntax-for-github-actions
+name: Set SemVer Variables
+description: Runs a shell script and sets multiple outputs
+author: payk-12
 inputs:
   version:
-    description: 'Input 1 description'
+    description: "Input 1 description"
     required: false
-  increment_by:
-    description: 'Increment by value: major, minor, patch, none'
+  increment-by:
+    description: "Increment by value: major, minor, patch, none"
 		default: 'patch'
     required: false
 outputs:
-  current_version:
-    description: 'The current SemVer value'
-  new_version:
-    description: 'The updated SemVer value'
+  currentversion:
+    description: "The current SemVer value"
+  newversion:
+    description: "The updated SemVer value"
 runs:
   using: 'node12'
   main: 'index.js'
